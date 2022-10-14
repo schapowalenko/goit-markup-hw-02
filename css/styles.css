@@ -100,4 +100,13 @@ color: #212121;
 .button:focus{
     color: #FFFFFF;
     background-color:#2196F3 ;
+
+}
+
+/* FOOTER */
+.footer-link .link{
+    color: rgba(255, 255, 255, 0.6);
+}
+.address{
+    color: #FFFFFF;
 }
