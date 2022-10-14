@@ -12,11 +12,14 @@ ul{
     list-style: none;
 }          
 
-body{
+.page{
     background-color: #F5F5F5;
     color: #757575;
     }
-/* стиль лого */
+
+/* logo*/
+
+
 .logo{
     color: #000000;
 }
@@ -25,7 +28,8 @@ body{
     color: #2196F3;
 }
 
-/* стиль навігації */
+/* навігація */
+
 
 .site-nav .link {
 color: #212121;
@@ -41,4 +45,59 @@ color: #212121;
 .site-nav .link:focus{
     color: #2196F3;
 }
+ .site-nav .link.current{
+    color: #2196F3;
 
+} 
+
+/* hero */
+
+
+.hero .hero-title{
+    color: #FFFFFF;
+
+}
+
+/* section*/
+
+
+.section .section-title{
+    color: #212121;
+}
+
+/* особливості */
+
+
+.peculiarities-list .title{
+    color: #212121;
+}
+
+/* наша команда */
+
+
+.team-link .title{
+    color: #212121;
+}
+
+/* ПОРТФОЛІО */
+    
+.project-link .title{
+    color:#212121;
+}
+
+/* КНОПКА */
+
+.button-hero{
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+.button{
+    color: #212121;
+    background-color: #F5F4FA;
+
+}
+.button:hover,
+.button:focus{
+    color: #FFFFFF;
+    background-color:#2196F3 ;
+}
