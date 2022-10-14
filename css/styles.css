@@ -12,18 +12,33 @@ ul{
     list-style: none;
 }          
 
-.page{
+body{
     background-color: #F5F5F5;
     color: #757575;
     }
-/* стиль навігації */
+/* стиль лого */
 .logo{
     color: #000000;
-
-    }
+}
 
 .logo-style{
     color: #2196F3;
-    
+}
+
+/* стиль навігації */
+
+.site-nav .link {
+color: #212121;
+}
+.contact-nav .link{
+    color:#757575;
+}
+.contact-nav .link:hover,
+.contact-nav .link:focus{
+    color: #2196F3;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: #2196F3;
 }
 
