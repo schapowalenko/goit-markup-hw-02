@@ -7,14 +7,23 @@
           /* фон1    #F5F5F5 */
           /* фон2   #2F303A */
           /* фон3   #F5F4FA */
+          :root{
+            --primary-text-color:#757575;
+            --title-text-color:#212121;
+            --accent-color:#2196F3;
+            --primary-white-color:#F5F5F5;
+
+          }
 /*видалити крапки списка  */
 ul{
     list-style: none;
 }          
 
-.page{
-    background-color: #F5F5F5;
-    color: #757575;
+body{
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
     }
 
 /* logo*/
@@ -22,91 +31,182 @@ ul{
 
 .logo{
     color: #000000;
+    font-family: raleway, sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
 }
 
 .logo-style{
-    color: #2196F3;
+    color: var(--accent-color);
+    
 }
 
 /* навігація */
 
 
 .site-nav .link {
-color: #212121;
+color: var(--title-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
 }
 .contact-nav .link{
-    color:#757575;
+    color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus{
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
-    color: #2196F3;
+    color: var(--accent-color);
 }
  .site-nav .link.current{
-    color: #2196F3;
+    color: var(--accent-color);
 
 } 
 
 /* hero */
 
-
+.hero{
+    background-color: #2F303A;
+}
 .hero .hero-title{
     color: #FFFFFF;
+     font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
 
-}
-
-/* section*/
-
-
-.section .section-title{
-    color: #212121;
 }
 
 /* особливості */
 
 
 .peculiarities-list .title{
-    color: #212121;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+.peculiarities-list .subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Чим ми займаємося */
+
+.section .section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* наша команда */
 
+.section-team .section-title{
+    background-color: #F5F4FA;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 
+}
 .team-link .title{
-    color: #212121;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-link .subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* ПОРТФОЛІО */
     
 .project-link .title{
-    color:#212121;
+    color:var(--title-text-color);
+    
+    
 }
+.project-link .link{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    
+
+}
+
 
 /* КНОПКА */
 
 .button-hero{
+    cursor: pointer;
     color: #FFFFFF;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0.06em;
+    font-family: roboto, sans-serif;
+    
 }
 .button{
-    color: #212121;
+    cursor: pointer;
+    color: var(--primary-text-color);
     background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    font-family: roboto, sans-serif;
+    
 
 }
 .button:hover,
 .button:focus{
     color: #FFFFFF;
-    background-color:#2196F3 ;
-
+    background-color:var(--accent-color);
+    
 }
 
 /* FOOTER */
+.footer{
+    background-color:#2F303A;
+}
 .footer-link .link{
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer-link .link:hover,
+.footer-link .link:focus{
+    color: var(--accent-color);
 }
 .address{
     color: #FFFFFF;
+    
 }
