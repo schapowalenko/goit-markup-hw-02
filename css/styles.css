@@ -14,6 +14,7 @@
             --primary-white-color:#FFFFFF;
             --primary-black-color:#000000;
             --background-button-color:#F5F4FA;
+            
 
           }
 /*видалити крапки списка  */
@@ -28,7 +29,20 @@ body{
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
     }
+/* ховае заголовки */
+.visually {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* logo*/
 
 
@@ -99,6 +113,7 @@ text-decoration: none;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 
 }
 
@@ -113,7 +128,7 @@ text-decoration: none;
     letter-spacing: 0.03em;
 }
 .peculiarities-list .subtitle{
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -131,9 +146,14 @@ text-decoration: none;
 }
 
 /* наша команда */
-
-.section-team .section-title{
+.section-team{
+    background-color: var(--background-button-color);
+}
+.team-link{
     background-color: var(--primary-white-color);
+}
+.section-team .section-title{
+    
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -143,6 +163,7 @@ text-decoration: none;
 
 }
 .team-link .title{
+    
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -151,7 +172,7 @@ text-decoration: none;
     letter-spacing: 0.03em;
 }
 .team-link .subtitle{
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.18px;
     text-align: center;
@@ -172,13 +193,13 @@ text-decoration: none;
 .project-link .link{
     color: var(--primary-text-color);
     text-decoration: none;
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
 }
 .project-link .subtitle{
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
@@ -225,16 +246,20 @@ text-decoration: none;
 .footer-link .link{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     
 }
+.footer-link .link:hover,
+.footer-link .link:focus{
+    color: var(--accent-color);
 
+}
 .address{
     color: var(--primary-white-color);
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
